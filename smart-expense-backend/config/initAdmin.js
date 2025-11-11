@@ -3,8 +3,8 @@ const bcrypt = require('bcryptjs');
 
 const initAdmin = async () => {
   try {
-    const email = 'codewithazlo@gmail.com';
-    const password = 'Azlan@123';
+    const email = 'admin_email_goes_here';
+    const password = 'admin_code_here';
 
     // Check if superadmin already exists
     const existingAdmin = await User.findOne({ email });

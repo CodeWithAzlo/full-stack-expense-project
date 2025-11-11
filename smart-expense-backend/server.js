@@ -1,7 +1,7 @@
 require('dotenv').config();
 const app = require('./app');
 const connectDB = require('./config/db');
-const initAdmin = require('./config/initAdmin'); // <-- import initAdmin
+const initAdmin = require('./config/initAdmin'); 
 
 //  Database connection
 connectDB().then(() => {
