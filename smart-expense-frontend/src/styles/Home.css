@@ -1,0 +1,107 @@
+/* ===== Base Dark Mode ===== */
+body {
+  background-color: #0e0e0e;
+  color: #f5f5f5;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* ===== Container ===== */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* ===== Header ===== */
+.home-title {
+  font-size: 3rem;
+  color: #00e676;
+  text-shadow: 0 0 15px rgba(0, 230, 118, 0.4);
+  margin-bottom: 10px;
+  animation: glowPulse 2s infinite alternate;
+}
+
+.home-subtitle {
+  font-size: 1.1rem;
+  color: #ccc;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* ===== Buttons ===== */
+.home-buttons {
+  display: flex;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.home-btn {
+  padding: 12px 26px;
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+.signup-btn {
+  background: linear-gradient(90deg, #00bcd4, #3f51b5);
+}
+
+.signup-btn:hover {
+  background: linear-gradient(90deg, #3f51b5, #00bcd4);
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(0, 188, 212, 0.6);
+}
+
+.login-btn {
+  background: linear-gradient(90deg, #ff4081, #f50057);
+}
+
+.login-btn:hover {
+  background: linear-gradient(90deg, #f50057, #ff4081);
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(255, 64, 129, 0.6);
+}
+
+/* ===== Footer ===== */
+.home-footer {
+  position: absolute;
+  bottom: 15px;
+  font-size: 0.9rem;
+  color: #888;
+  letter-spacing: 0.5px;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glowPulse {
+  from {
+    text-shadow: 0 0 10px rgba(0, 230, 118, 0.3);
+  }
+  to {
+    text-shadow: 0 0 25px rgba(0, 230, 118, 0.8);
+  }
+}
