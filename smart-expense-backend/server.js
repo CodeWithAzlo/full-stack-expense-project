@@ -8,6 +8,7 @@ const initAdmin = require("./config/initAdmin");
 //   initAdmin();
 // });
 
+// for serverless deployment on vercel because vercel may cold start the server sometimes
 let isConnected = false;
 
 async function connectionToMongoDB() {
